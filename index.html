@@ -1,0 +1,60 @@
+<html>
+<head>
+
+<title>Test</title>
+<script type="text/javascript" src="scripts/libs/jquery.js"></script>
+<script type="text/javascript" src="scripts/libs/countdown.js" ></script>
+<script type="text/javascript" src="scripts/app/app.js" ></script>
+<link   href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<div id="mainDiv">
+		<div align="center" id="checkboxs">
+			<input type="radio" name="user" value="A">A User<br>
+			<input type="radio" name="user" value="B">B User<br>
+			<input type="radio" name="user" value="C">C User<br>
+		</div>
+		<div>
+			<table id="tblgraph1" align="center" width="99" cellpadding="2" cellspacing="2" border="0" class="clsNone">
+				<tbody>	
+					<tr bgcolor="#C0C0C0" id="tblContent">
+						<td bgcolor="#fff">
+							<span class="yaxis-content">30</span>
+							<span class="yaxis-content">25</span>
+							<span class="yaxis-content">20</span>
+							<span class="yaxis-content">15</span>
+							<span class="yaxis-content">10</span>
+							<span class="yaxis-content">5</span>
+						</td>
+						<td class="white-baground">
+							<div class="yaxixs"></div>					
+						</td>		
+					</tr>
+					<tr >
+						<td colspan="4" style="position:relative"><div class="xaxix-content"></div></td>
+					</tr>
+					<tr bgcolor="#fff">
+							<td bgcolor="#fff"></td>
+							<td bgcolor="#fff"></td>
+							<td align="center">A</td>
+							<td align="center">B</td>
+							<td align="center">C</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script type="text/javascript">
+			var myCountdown2 = new Countdown({
+											time: 60, 
+											width:150, 
+											height:80, 
+											rangeHi:"minute",	// <- no comma on last item!
+											onComplete : doneHandler1
+											});
+		</script>
+	</div>
+
+</body>
+</html>
